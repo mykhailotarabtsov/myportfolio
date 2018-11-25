@@ -1,0 +1,76 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  html, body {
+    font-size: 16px;
+  }
+  #header {
+    .header__information {
+      margin-left: 0;
+      margin-right: 0;
+
+      h4 {
+        text-align: center;
+        font-size:  1.8em;
+      }
+      h3 {
+        text-align: center;
+        font-size: 2em;
+      }
+    }
+  }
+
+  #main {
+    section.avatar {
+      h3 {
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+        font-size: 1.1em;
+      }
+    }
+    section.portfolio {
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  #header {
+    .navbar {
+      position: relative;
+
+      &-toggler {
+        padding: 0;
+      }
+
+      &-collapse {
+        position: absolute;
+        right: 0;
+        bottom: -120%;
+      }
+      &-nav {
+        .nav-item {
+          margin-right: 0;
+
+          .nav-link {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  
+}

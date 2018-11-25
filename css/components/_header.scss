@@ -1,0 +1,112 @@
+#header {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2)),
+              url('../img/DSC00100.jpeg');
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+  padding: 60px 0;
+
+  .container {
+    height: 100%;
+    position: relative;
+  }
+
+  .navbar {
+    width: 100%;
+
+    a {
+      color: $color_menu;
+    }
+    a.navbar-brand {
+      margin: 0;
+      padding: 0;
+      font-size: 3em;
+      color: #cf3f7c;
+    }
+    &-toggler {
+      border: none;
+      outline: none;
+    }
+
+    &-nav {
+
+      .nav-item {
+        margin-right: 35px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        transition: border-color .3s ease-in;
+        &:nth-last-of-type(1) {
+          margin-right: 0;
+        }
+        &.active {
+          border-bottom-color:#cf3f7c;
+          font-weight: bold;
+
+          a {
+            color: #cf3f7c;
+          }
+        }
+        &:hover {
+          border-bottom: 2px solid #cf3f7c;
+
+          a {
+            color: #cf3f7c;
+          }
+        }
+
+        .nav-link {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  // Header Informaton Block
+
+  .header__information {
+    position: absolute;
+    bottom: 10%;
+    color: $color_white;
+    margin-left: 0;
+    margin-right: 0;
+
+    h4 {
+      font-size: 2.91875em;
+    }
+    h3 {
+      font-size: 3.75em;
+    }
+    .find__me {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      font-size: 1.25em;
+
+      li {
+        margin-right: 20px;
+
+        a {
+          color: $color_menu;
+        }
+        .social__icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 35px;
+          height: 35px;
+          border-radius: 100%;
+          background-color: $color_white;
+
+          &:hover {
+            background-color: $color_bg_orange;
+            color: $color_white;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
